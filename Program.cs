@@ -43,7 +43,7 @@ void Task38()
     int size = 10;
     double[] numbers = new double[size];
     Random random = new Random();
-    for(int i = 0; i < numbers.Length; i++)
+    for (int i = 0; i < numbers.Length; i++)
     {
         numbers[i] = Convert.ToDouble(random.Next(-9999, 10000)) / 100;
     }
@@ -98,9 +98,10 @@ void ShowArrayDouble(double[] arr)
 double GetMax(double[] arr)
 {
     double max = arr[0];
-    for(int i = 1; i < arr.Length; i++)
+    for (int i = 1; i < arr.Length; i++)
     {
-        if(arr[i] > max){
+        if (arr[i] > max)
+        {
             max = arr[i];
         }
     }
@@ -109,9 +110,10 @@ double GetMax(double[] arr)
 double GetMin(double[] arr)
 {
     double min = arr[0];
-    for(int i = 1; i < arr.Length; i++)
+    for (int i = 1; i < arr.Length; i++)
     {
-        if(arr[i] < min){
+        if (arr[i] < min)
+        {
             min = arr[i];
         }
     }
