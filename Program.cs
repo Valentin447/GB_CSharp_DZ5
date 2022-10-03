@@ -19,7 +19,22 @@
 }
 void Task36()
 {
+    // Задача 36. Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов с нечётными индексами.
 
+    int size = 10;
+    int[] numbers = new int[size];
+    FillArray(numbers, -99, 99);
+    ShowArray(numbers);
+    Console.WriteLine();
+    int sum = 0;
+    for(int i = 0; i < numbers.Length; i++)
+    {
+        if(i % 2 == 1)
+        {
+            sum = sum + numbers[i];
+        }
+    }
+    Console.WriteLine("Сумма элементов с не четными индексами равна: " + sum);
 }
 void Task38()
 {
@@ -50,6 +65,6 @@ void ShowArray(int[] arr)
     }
     Console.Write("}");
 }
-Task34();
-//Task36();
+//Task34();
+Task36();
 //Task38();
